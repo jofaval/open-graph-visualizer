@@ -1,0 +1,85 @@
+:root {
+  --og-width: 500px;
+  --og-max-width: 650px;
+  --text-color: #333;
+}
+
+* {
+  font-family: "Open sans";
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1024px;
+  margin: auto;
+
+  text-align: center;
+  color: var(--text-color);
+}
+
+button,
+input[type="submit"] {
+  outline: none;
+  border: thin solid var(--text-color);
+  border-radius: 8px;
+
+  margin: auto;
+  padding: 4px 8px;
+
+  background: none;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: var(--text-color);
+  color: white;
+}
+
+#form {
+  width: auto;
+  margin: 16px;
+  padding: 8px;
+
+  border: thin solid var(--text-color);
+  border-radius: 12px;
+
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#result {
+  text-align: left;
+  background: #f3f3f3;
+
+  max-width: var(--og-max-width);
+  margin: auto;
+  padding: 12px;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#ogImage {
+  width: 100%;
+}

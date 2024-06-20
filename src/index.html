@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OpenGraph Visualizer</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://ogp.me/logo.png"
+      type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Open Graph Protocol Visualizer</h1>
+
+    <form id="form">
+      <div class="form-input">
+        <label for="url">URL</label>
+        <input type="text" name="url" id="url" />
+      </div>
+
+      <input type="submit" value="Check" />
+    </form>
+
+    <div id="result">
+      <a id="ogUrl" href="">
+        <img id="ogImage" src="" />
+
+        <div class="details">
+          <h2 id="ogTitle"></h2>
+          <p id="ogDescription"></p>
+        </div>
+      </a>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>
